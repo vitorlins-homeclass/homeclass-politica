@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade | Home Class Soluções Imobiliárias</title>
+<meta name="description" content="Saiba como a Home Class Soluções Imobiliárias coleta, usa, compartilha e protege seus dados pessoais, conforme a LGPD.">
+<link rel="canonical" href="https://www.homeclass.imb.br/politica-de-privacidade">
+<style>
+  :root {
+    --laranja: #F5821F;
+    --laranja-claro: #FDE9D6;
+    --cinza: #808285;
+    --cinza-claro: #F4F4F5;
+    --grafite: #231F20;
+    --linha: #E3E3E5;
+    --texto: #231F20;
+    --fundo: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+  body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--texto);
+    background: var(--fundo);
+  }
+  a { color: var(--grafite); text-decoration-color: var(--laranja); text-underline-offset: 3px; text-decoration-thickness: 2px; }
+  a:hover { color: #B85C0A; }
+
+  header.topo { background: var(--grafite); color: #fff; border-bottom: 5px solid var(--laranja); }
+  .topo-in { max-width: 1080px; margin: 0 auto; padding: 22px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .marca { font-weight: 700; letter-spacing: .14em; font-size: 20px; text-transform: uppercase; color: #fff; text-decoration: none; }
+  .marca b { color: var(--laranja); }
+  .voltar { color: #fff; font-size: 14px; text-decoration-color: var(--laranja); }
+  .voltar:hover { color: var(--laranja); }
+
+  .hero { background: var(--cinza-claro); border-bottom: 1px solid var(--linha); }
+  .hero-in { max-width: 1080px; margin: 0 auto; padding: 40px 20px 34px; }
+  .hero h1 { margin: 0 0 10px; font-size: clamp(28px, 4.5vw, 40px); line-height: 1.15; }
+  .hero h1::after { content: ""; display: block; width: 64px; height: 5px; background: var(--laranja); margin-top: 14px; }
+  .hero p { margin: 14px 0 0; max-width: 62ch; color: #444; }
+  .atualizacao { display: inline-block; margin-top: 18px; font-size: 14px; color: var(--grafite); background: var(--laranja-claro); border-left: 4px solid var(--laranja); padding: 6px 12px; }
+
+  .layout { max-width: 1080px; margin: 0 auto; padding: 36px 20px 64px; display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  nav.indice { position: sticky; top: 24px; align-self: start; font-size: 14px; }
+  nav.indice h2 { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--cinza); margin: 0 0 10px; }
+  nav.indice ol { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--linha); }
+  nav.indice li a { display: block; padding: 6px 0 6px 14px; margin-left: -2px; border-left: 2px solid transparent; text-decoration: none; color: #444; }
+  nav.indice li a:hover { color: var(--grafite); border-left-color: var(--laranja); background: var(--cinza-claro); }
+
+  main section { padding-bottom: 8px; margin-bottom: 30px; }
+  main h2 { font-size: 22px; line-height: 1.25; margin: 0 0 12px; padding-top: 6px; }
+  main h2 .n { display: inline-block; min-width: 34px; color: var(--laranja); }
+  main p { margin: 0 0 14px; }
+  main ul { margin: 0 0 14px; padding-left: 22px; }
+  main li { margin-bottom: 6px; }
+  main li::marker { color: var(--laranja); }
+
+  .ficha { background: var(--cinza-claro); border: 1px solid var(--linha); border-left: 5px solid var(--laranja); padding: 16px 20px; margin: 0 0 16px; }
+  .ficha dl { margin: 0; display: grid; grid-template-columns: 150px 1fr; gap: 6px 14px; }
+  .ficha dt { font-weight: 700; }
+  .ficha dd { margin: 0; overflow-wrap: anywhere; }
+
+  .tabela { overflow-x: auto; margin: 0 0 16px; border: 1px solid var(--linha); }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; min-width: 460px; }
+  th { background: var(--grafite); color: #fff; text-align: left; padding: 10px 14px; font-weight: 700; }
+  td { padding: 10px 14px; border-top: 1px solid var(--linha); vertical-align: top; }
+  tbody tr:nth-child(even) td { background: #FAFAFA; }
+
+  .contato { background: var(--grafite); color: #fff; padding: 20px 24px; border-radius: 4px; margin-top: 8px; }
+  .contato a { color: #fff; text-decoration-color: var(--laranja); }
+  .contato a:hover { color: var(--laranja); }
+  .contato p { margin: 0 0 6px; }
+  .contato p:last-child { margin: 0; }
+
+  footer.rodape { background: var(--grafite); color: #C9C9CB; border-top: 5px solid var(--laranja); font-size: 14px; }
+  .rodape-in { max-width: 1080px; margin: 0 auto; padding: 26px 20px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .rodape-in p { margin: 0; }
+  .rodape-in strong { color: #fff; }
+
+  :focus-visible { outline: 3px solid var(--laranja); outline-offset: 2px; }
+
+  @media (max-width: 860px) {
+    .layout { grid-template-columns: 1fr; gap: 20px; padding-top: 24px; }
+    nav.indice { position: static; background: var(--cinza-claro); border: 1px solid var(--linha); padding: 14px 16px; }
+    nav.indice ol { columns: 1; }
+  }
+  @media (max-width: 520px) {
+    .ficha dl { grid-template-columns: 1fr; gap: 0; }
+    .ficha dt { margin-top: 8px; }
+  }
+  @media print {
+    header.topo, nav.indice, .voltar { display: none; }
+    .layout { display: block; padding: 0; }
+    .hero { background: none; }
+    th { background: #eee !important; color: #000 !important; }
+    .contato { background: none; color: #000; border: 1px solid #999; }
+    .contato a { color: #000; }
+    footer.rodape { background: none; color: #000; border-top: 1px solid #999; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="https://www.homeclass.imb.br/" aria-label="Home Class, página inicial">Home <b>Class</b></a>
+    <a class="voltar" href="https://www.homeclass.imb.br/">&larr; Voltar ao site</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-in">
+    <h1>Política de Privacidade</h1>
+    <p>Aqui explicamos, de forma direta, quais dados pessoais a Home Class coleta, para que os usa, com quem os compartilha e como você exerce seus direitos.</p>
+    <span class="atualizacao">Última atualização: 10 de outubro de 2026</span>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="indice" aria-label="Índice da política">
+    <h2>Nesta página</h2>
+    <ol>
+      <li><a href="#quem-somos">1. Quem somos</a></li>
+      <li><a href="#dados-coletados">2. Dados que coletamos</a></li>
+      <li><a href="#finalidades">3. Finalidades e base legal</a></li>
+      <li><a href="#compartilhamento">4. Com quem compartilhamos</a></li>
+      <li><a href="#transferencia">5. Transferência internacional</a></li>
+      <li><a href="#retencao">6. Prazo de guarda</a></li>
+      <li><a href="#direitos">7. Seus direitos</a></li>
+      <li><a href="#seguranca">8. Segurança</a></li>
+      <li><a href="#cookies">9. Cookies</a></li>
+      <li><a href="#encarregado">10. Encarregado (DPO)</a></li>
+      <li><a href="#alteracoes">11. Alterações</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <section id="quem-somos">
+      <h2><span class="n">1.</span>Quem somos</h2>
+      <p>A <strong>Home Class Soluções Imobiliárias</strong> (&ldquo;Home Class&rdquo;) é a controladora dos dados pessoais tratados conforme esta Política, nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018, &ldquo;LGPD&rdquo;).</p>
+      <div class="ficha">
+        <dl>
+          <dt>Razão social</dt><dd>HOME CLASS SOLUÇÕES IMOBILIÁRIAS LTDA.</dd>
+          <dt>CNPJ</dt><dd>55.979.925/0001-18</dd>
+          <dt>Endereço</dt><dd>Rua 72, nº 223, Quadra C16, Lotes 12/15, Condomínio Qs 01, Salas 503 a 506, Jardim Goiás, Goiânia/GO, CEP 74805-480</dd>
+          <dt>CRECI</dt><dd>CRECI-J 42220</dd>
+          <dt>E-mail de contato</dt><dd><a href="mailto:soares@homeclass.imb.br">soares@homeclass.imb.br</a></dd>
+          <dt>Site</dt><dd><a href="https://www.homeclass.imb.br/">https://www.homeclass.imb.br/</a></dd>
+        </dl>
+      </div>
+      <p>A Home Class atua na intermediação de compra, venda e avaliação de imóveis, com foco nos segmentos de médio, alto padrão e luxo.</p>
+    </section>
+
+    <section id="dados-coletados">
+      <h2><span class="n">2.</span>Dados que coletamos</h2>
+      <p>Coletamos apenas os dados necessários para atender você na busca, na compra, na venda ou na avaliação de um imóvel.</p>
+      <ul>
+        <li><strong>Identificação e contato:</strong> nome, telefone/WhatsApp e e-mail, informados em formulários de anúncios (Meta Ads), no site ou diretamente a um corretor.</li>
+        <li><strong>Perfil de interesse:</strong> tipo de imóvel, bairros, faixa de valor, prazo de compra e forma de pagamento.</li>
+        <li><strong>Dados para simulação de financiamento:</strong> renda e informações fornecidas por você, quando você solicita essa simulação.</li>
+        <li><strong>Comunicação:</strong> mensagens trocadas por WhatsApp, e-mail ou telefone com nossa equipe comercial.</li>
+        <li><strong>Navegação:</strong> endereço IP, tipo de dispositivo, páginas visitadas e origem do acesso, coletados por cookies e pixels (<a href="#cookies">item 9</a>).</li>
+      </ul>
+      <p>Não solicitamos dados sensíveis (art. 5º, II, da LGPD). Se você nos enviar algum, eles serão tratados apenas para a finalidade que motivou o envio.</p>
+    </section>
+
+    <section id="finalidades">
+      <h2><span class="n">3.</span>Para que usamos seus dados e base legal</h2>
+      <p>Cada uso dos seus dados tem uma finalidade definida e uma base legal prevista nos arts. 7º e 9º da LGPD.</p>
+      <div class="tabela">
+        <table>
+          <thead><tr><th scope="col">Finalidade</th><th scope="col">Base legal</th></tr></thead>
+          <tbody>
+            <tr><td>Responder ao seu contato e apresentar imóveis compatíveis com seu perfil</td><td>Execução de procedimentos preliminares a contrato (art. 7º, V)</td></tr>
+            <tr><td>Elaborar propostas, negociar e formalizar a intermediação</td><td>Execução de contrato (art. 7º, V)</td></tr>
+            <tr><td>Simular financiamento e encaminhar a análise a instituições financeiras</td><td>Consentimento (art. 7º, I)</td></tr>
+            <tr><td>Enviar novidades, lançamentos e ofertas por WhatsApp e e-mail</td><td>Consentimento (art. 7º, I) ou legítimo interesse (art. 7º, IX), com opção de cancelar a qualquer momento</td></tr>
+            <tr><td>Medir e melhorar anúncios, site e atendimento</td><td>Legítimo interesse (art. 7º, IX)</td></tr>
+            <tr><td>Cumprir obrigações legais, fiscais e normas do CRECI/COFECI</td><td>Obrigação legal (art. 7º, II)</td></tr>
+            <tr><td>Exercer direitos em processos judiciais, administrativos ou arbitrais</td><td>Exercício regular de direitos (art. 7º, VI)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Não usamos seus dados para finalidades incompatíveis com as descritas aqui sem informar você antes.</p>
+    </section>
+
+    <section id="compartilhamento">
+      <h2><span class="n">4.</span>Com quem compartilhamos</h2>
+      <p>A Home Class não vende dados pessoais. Compartilhamos apenas o necessário, com estes destinatários:</p>
+      <ul>
+        <li><strong>Incorporadoras e construtoras</strong> dos imóveis em que você demonstrou interesse, para atendimento e negociação.</li>
+        <li><strong>Instituições financeiras</strong>, quando você solicita simulação ou análise de crédito.</li>
+        <li><strong>Corretores e equipes comerciais</strong> da Home Class responsáveis pelo seu atendimento.</li>
+        <li><strong>Prestadores de tecnologia:</strong> Meta (anúncios), Uazapi (mensagens por WhatsApp), 100Bug (CRM), Supabase (armazenamento de dados) e Lovable (desenvolvimento de aplicações).</li>
+        <li><strong>Autoridades públicas</strong>, quando houver obrigação legal ou ordem judicial.</li>
+      </ul>
+      <p>Os prestadores atuam como operadores e só podem usar os dados conforme nossas instruções e a LGPD.</p>
+    </section>
+
+    <section id="transferencia">
+      <h2><span class="n">5.</span>Transferência internacional de dados</h2>
+      <p>Algumas ferramentas que usamos mantêm servidores fora do Brasil (por exemplo, plataformas de anúncios, mensagens e armazenamento em nuvem). Quando seus dados forem transferidos, adotamos as salvaguardas do art. 33 da LGPD, como cláusulas contratuais padrão e a escolha de provedores com nível de proteção compatível com a lei brasileira.</p>
+    </section>
+
+    <section id="retencao">
+      <h2><span class="n">6.</span>Por quanto tempo guardamos os dados</h2>
+      <p>Guardamos seus dados só pelo tempo necessário para cumprir as finalidades acima e as obrigações legais.</p>
+      <div class="tabela">
+        <table>
+          <thead><tr><th scope="col">Situação</th><th scope="col">Prazo</th></tr></thead>
+          <tbody>
+            <tr><td>Lead sem negociação em andamento</td><td>12 meses após o último contato</td></tr>
+            <tr><td>Cliente com contrato ou negociação</td><td>Duração do contrato + 5 anos (prazos fiscais, civis e do CRECI)</td></tr>
+            <tr><td>Consentimento de marketing</td><td>Até você revogar</td></tr>
+            <tr><td>Registros de acesso ao site</td><td>6 meses (Marco Civil da Internet, art. 15)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Ao fim do prazo, os dados são excluídos ou anonimizados, salvo quando a lei exigir a guarda.</p>
+    </section>
+
+    <section id="direitos">
+      <h2><span class="n">7.</span>Seus direitos como titular</h2>
+      <p>Você pode pedir, a qualquer momento e gratuitamente (art. 18 da LGPD):</p>
+      <ul>
+        <li>confirmação de que tratamos seus dados e acesso a eles;</li>
+        <li>correção de dados incompletos, inexatos ou desatualizados;</li>
+        <li>anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade;</li>
+        <li>portabilidade dos dados a outro fornecedor;</li>
+        <li>eliminação dos dados tratados com base no seu consentimento;</li>
+        <li>informação sobre com quem compartilhamos seus dados;</li>
+        <li>informação sobre a possibilidade de não consentir e suas consequências;</li>
+        <li>revogação do consentimento;</li>
+        <li>revisão de decisões tomadas apenas por tratamento automatizado.</li>
+      </ul>
+      <p><strong>Como pedir:</strong> envie e-mail para <a href="mailto:soares@homeclass.imb.br">soares@homeclass.imb.br</a> ou responda a qualquer mensagem nossa pedindo a exclusão. Respondemos em até 15 dias. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+    </section>
+
+    <section id="seguranca">
+      <h2><span class="n">8.</span>Segurança das informações</h2>
+      <p>Usamos medidas técnicas e administrativas para proteger seus dados contra acesso não autorizado, perda e vazamento:</p>
+      <ul>
+        <li>acesso restrito por login individual e perfil de permissão;</li>
+        <li>armazenamento em ambientes com criptografia e controle de acesso;</li>
+        <li>orientação e compromisso de confidencialidade para corretores e equipes;</li>
+        <li>contratos com prestadores que exigem proteção equivalente.</li>
+      </ul>
+      <p>Se houver incidente que possa causar risco ou dano relevante, comunicaremos você e a ANPD, conforme o art. 48 da LGPD.</p>
+    </section>
+
+    <section id="cookies">
+      <h2><span class="n">9.</span>Cookies e tecnologias de rastreamento</h2>
+      <p>Nosso site e nossas páginas de anúncios podem usar cookies e pixels para funcionar, medir audiência e mostrar anúncios relevantes.</p>
+      <div class="tabela">
+        <table>
+          <thead><tr><th scope="col">Tipo</th><th scope="col">Uso</th><th scope="col">Exemplo</th></tr></thead>
+          <tbody>
+            <tr><td>Essenciais</td><td>Funcionamento do site</td><td>Sessão e segurança</td></tr>
+            <tr><td>Estatísticos</td><td>Medir acessos e desempenho</td><td>Ferramentas de análise de acesso</td></tr>
+            <tr><td>Publicidade</td><td>Medir conversões e personalizar anúncios</td><td>Meta Pixel</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Cookies não essenciais só são ativados após seu consentimento. Você pode recusá-los no aviso do site ou nas configurações do navegador.</p>
+    </section>
+
+    <section id="encarregado">
+      <h2><span class="n">10.</span>Encarregado de dados (DPO)</h2>
+      <p>O encarregado é o canal entre você, a Home Class e a ANPD (art. 41 da LGPD).</p>
+      <div class="contato">
+        <p><strong>Rafael da Silva Soares</strong></p>
+        <p><a href="mailto:soares@homeclass.imb.br">soares@homeclass.imb.br</a></p>
+      </div>
+    </section>
+
+    <section id="alteracoes">
+      <h2><span class="n">11.</span>Alterações desta Política</h2>
+      <p>Podemos atualizar esta Política para refletir mudanças na lei ou em nossos serviços. A versão vigente fica sempre nesta página, com a data da última atualização no topo. Em mudanças relevantes, avisaremos você pelos canais de contato.</p>
+      <p><strong>Última atualização:</strong> 10 de outubro de 2026</p>
+    </section>
+  </main>
+</div>
+
+<footer class="rodape">
+  <div class="rodape-in">
+    <p><strong>HOME CLASS SOLUÇÕES IMOBILIÁRIAS LTDA.</strong><br>CNPJ 55.979.925/0001-18 &middot; CRECI-J 42220</p>
+    <p>Rua 72, nº 223, Salas 503 a 506, Jardim Goiás<br>Goiânia/GO &middot; CEP 74805-480</p>
+  </div>
+</footer>
+
+</body>
+</html>
